@@ -22,7 +22,7 @@ jobs:
         run: pnpm install
 
       - name: Build with Nuxt.js
-        run: npx nuxt build --preset github_pages
+        run: NUXT_APP_BASE_URL=/frontend-nuxt-starter/ npx nuxt build --preset github_pages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
