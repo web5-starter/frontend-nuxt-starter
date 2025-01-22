@@ -29,6 +29,9 @@ export default defineConfig({
       '3xl': '1920px' // 3x large devices (e.g. ultra-wide monitors)
     }
   },
+  shortcuts: [
+    [/^clickable(-.*)?$/, ([, scale]) => `cursor-pointer transition active:scale${scale || '-95'}`]
+  ],
   presets: [
     presetUno(),
     presetUseful() as PresetOrFactoryAwaitable<object>,
