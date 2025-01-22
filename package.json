@@ -1,7 +1,7 @@
 {
   "name": "frontend-nuxt-starter",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "prepare": "simple-git-hooks && nuxt prepare",
