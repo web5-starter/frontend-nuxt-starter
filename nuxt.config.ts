@@ -6,12 +6,17 @@ export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
     '@unocss/nuxt',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    '@nuxtjs/color-mode'
   ],
 
   css: [
     '@unocss/reset/tailwind.css'
   ],
+
+  colorMode: {
+    classSuffix: ''
+  },
 
   imports: {
     dirs: [

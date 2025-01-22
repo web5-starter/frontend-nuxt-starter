@@ -10,6 +10,11 @@ body,
 <template>
   <div id="nuxt-app">
     <NuxtRouteAnnouncer />
+
+    <div pa left-0 top-0 w-full>
+      <ColorMode />
+    </div>
+
     <NuxtPage />
   </div>
 </template>
