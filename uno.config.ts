@@ -6,7 +6,7 @@ import {
   presetAttributify,
   presetIcons,
   presetTypography,
-  presetUno,
+  presetWind3,
   transformerDirectives,
   transformerVariantGroup
 } from 'unocss'
@@ -42,7 +42,7 @@ export default defineConfig({
     [/^clickable(-.*)?$/, ([, scale]) => `cursor-pointer transition active:scale${scale || '-95'}`]
   ],
   presets: [
-    presetUno(),
+    presetWind3(),
     presetUseful() as PresetOrFactoryAwaitable<object>,
     presetAttributify(),
     presetIcons({
